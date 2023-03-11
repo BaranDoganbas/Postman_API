@@ -1,0 +1,113 @@
+{
+	"info": {
+		"_postman_id": "9865341e-5794-4f6c-a6c3-647f929edfff",
+		"name": "B103",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Post test",
+			"_postman_id": "f0d91606-317a-4c1e-bfee-e76ef87423e4",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": 1453,\r\n  \"category\": {\r\n    \"id\": 21,\r\n    \"name\": \"Fatih'in Toplari\"\r\n  },\r\n  \"name\": \"Dusman Askeri\",\r\n  \"photoUrls\": [\r\n    \"string\"\r\n  ],\r\n  \"tags\": [\r\n    {\r\n      \"id\": 123,\r\n      \"name\": \"sampiyon\"\r\n    }\r\n  ],\r\n  \"status\": \"available\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://petstore.swagger.io/v2/pet"
+			},
+			"response": []
+		},
+		{
+			"name": "Get test",
+			"_postman_id": "920576ee-9718-48ef-837e-ce62632afa7e",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://petstore.swagger.io/v2/pet/1453",
+					"protocol": "https",
+					"host": [
+						"petstore",
+						"swagger",
+						"io"
+					],
+					"path": [
+						"v2",
+						"pet",
+						"1453"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Put test",
+			"_postman_id": "5fb2b22a-a97e-42e2-bf76-55261244c502",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": 1453,\r\n  \"category\": {\r\n    \"id\": 21,\r\n    \"name\": \"Fatih'in Toplari\"\r\n  },\r\n  \"name\": \"Dusman Askeri\",\r\n  \"photoUrls\": [\r\n    \"string\"\r\n  ],\r\n  \"tags\": [\r\n    {\r\n      \"id\": 123,\r\n      \"name\": \"sampiyon\"\r\n    }\r\n  ],\r\n  \"status\": \"available\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://petstore.swagger.io/v2/pet"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete test",
+			"_postman_id": "f1f3927a-005c-45f5-82cc-1df21b21924d",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "https://petstore.swagger.io/v2/pet/1453"
+			},
+			"response": []
+		},
+		{
+			"name": "Get fail test",
+			"_postman_id": "e1e6b590-4294-46bc-9df9-8c62a25e1f98",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "https://petstore.swagger.io/v2/pet/1453"
+			},
+			"response": []
+		}
+	]
+}
