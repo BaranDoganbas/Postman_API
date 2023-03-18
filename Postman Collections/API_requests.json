@@ -29,6 +29,20 @@
 		},
 		{
 			"name": "Get test",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "f596bf99-2919-4683-ac83-119e1a73abcb",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"id": "920576ee-9718-48ef-837e-ce62632afa7e",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
