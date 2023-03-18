@@ -77,6 +77,20 @@
 		},
 		{
 			"name": "Put test",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "cfd57ab5-6b1f-49fd-92c2-a4f2d3ac7158",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"id": "5fb2b22a-a97e-42e2-bf76-55261244c502",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
