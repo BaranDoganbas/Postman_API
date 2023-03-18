@@ -127,6 +127,20 @@
 		},
 		{
 			"name": "Delete test",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "7b1b0784-577d-4a16-a9f3-e7b7a55bd3d8",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"id": "f1f3927a-005c-45f5-82cc-1df21b21924d",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
