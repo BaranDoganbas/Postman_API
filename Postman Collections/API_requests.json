@@ -154,6 +154,20 @@
 		},
 		{
 			"name": "Get fail test",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "2630c35e-9a18-4df3-9618-b5ab094c411d",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"id": "e1e6b590-4294-46bc-9df9-8c62a25e1f98",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
